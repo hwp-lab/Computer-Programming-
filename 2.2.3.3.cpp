@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("a=");
+	scanf("%d",&a);
+	printf("b=");
+	scanf("%d",&b);
+	printf("c=");
+	scanf("%d",&c);
+	printf("a+=a+b:%d\n",a+=a+b);
+	a=2;
+	b=3;
+	c=4;
+	printf("a*=b%%c:%d\n",a*=b%c);
+	a=2;
+	b=3;
+	c=4;
+	printf("a/=c-a:%d\n",a/=c-a);
+	a=2;
+	b=3;
+	c=4;
+	printf("a+=a-=a*=a:%d\n",a+=a-=a*=a);
+	a=2;
+	b=3;
+	c=4;
+	printf("a=(a=++b,a+5,a/5):%d\n",a=(a=++b,a+5,a/5));
+	a=2;
+	b=3;
+	c=4;
+	printf("(a>=b>=2)?1:0:%d\n",(a>=b>=2)?1:0);
+}
