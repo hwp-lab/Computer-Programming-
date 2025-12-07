@@ -1,0 +1,55 @@
+# Project: 大作业--数组运算器
+# Makefile created by Red Panda C++ 3.1.2871
+
+CXX      = "g++.exe"
+CC       = "gcc.exe"
+WINDRES  = "windres.exe"
+RM       = del /q /f
+CD       = cd /d
+LIBS     = 
+INCS     = 
+CXXINCS  = 
+CXXFLAGS = $(CXXINCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
+CFLAGS   = $(INCS) "-g3" "-pipe" "-Wall" "-D_DEBUG"
+WINDRESFLAGS = 
+RES      = 大作业--数组运算器_private.res
+OBJ      = insertarray.o sortarray.o createarray.o findarray.o judgearray.o deletarray.o 主函数、菜单函数.o $(RES)
+BIN      = 大作业--数组运算器.exe
+LINKOBJ  = "insertarray.o" "sortarray.o" "createarray.o" "findarray.o" "judgearray.o" "deletarray.o" "主函数、菜单函数.o" "大作业--数组运算器_private.res"
+CLEANOBJ = "insertarray.o" "sortarray.o" "createarray.o" "findarray.o" "judgearray.o" "deletarray.o" "主函数、菜单函数.o" "大作业--数组运算器_private.res" "大作业--数组运算器.exe"
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) >NUL 2>&1
+
+大作业--数组运算器.exe: $(OBJ)
+
+	$(CC) $(LINKOBJ) -o "大作业--数组运算器.exe" $(LIBS)
+
+insertarray.o: insertarray.c judgearray.h
+	$(CC) -c "insertarray.c" -o "insertarray.o" $(CFLAGS) 
+
+sortarray.o: sortarray.c
+	$(CC) -c "sortarray.c" -o "sortarray.o" $(CFLAGS) 
+
+createarray.o: createarray.c
+	$(CC) -c "createarray.c" -o "createarray.o" $(CFLAGS) 
+
+findarray.o: findarray.c
+	$(CC) -c "findarray.c" -o "findarray.o" $(CFLAGS) 
+
+judgearray.o: judgearray.c
+	$(CC) -c "judgearray.c" -o "judgearray.o" $(CFLAGS) 
+
+deletarray.o: deletarray.c
+	$(CC) -c "deletarray.c" -o "deletarray.o" $(CFLAGS) 
+
+主函数、菜单函数.o: 主函数、菜单函数.c findarray.h insertarray.h deletarray.h createarray.h sortarray.h judgearray.h
+	$(CC) -c "主函数、菜单函数.c" -o "主函数、菜单函数.o" $(CFLAGS) 
+
+大作业--数组运算器_private.res: 大作业--数组运算器_private.rc 
+	$(WINDRES) -i "大作业--数组运算器_private.rc" --input-format=rc -o "大作业--数组运算器_private.res" -O coff $(WINDRESFLAGS) 
+

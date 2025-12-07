@@ -1,0 +1,74 @@
+[
+    {
+        "caretX": 14,
+        "caretY": 12,
+        "filename": "E:/hwp学编程/大作业--数组运算器/insertarray.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 1836
+    },
+    {
+        "caretX": 3,
+        "caretY": 103,
+        "filename": "E:/hwp学编程/大作业--数组运算器/sortarray.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 6936
+    },
+    {
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "E:/hwp学编程/大作业--数组运算器/createarray.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 816
+    },
+    {
+        "caretX": 10,
+        "caretY": 34,
+        "filename": "E:/hwp学编程/大作业--数组运算器/findarray.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 1110
+    },
+    {
+        "caretX": 11,
+        "caretY": 17,
+        "filename": "E:/hwp学编程/大作业--数组运算器/judgearray.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 612
+    },
+    {
+        "caretX": 7,
+        "caretY": 6,
+        "filename": "E:/hwp学编程/大作业--数组运算器/judgearray.h",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 0
+    },
+    {
+        "caretX": 3,
+        "caretY": 14,
+        "filename": "E:/hwp学编程/大作业--数组运算器/deletarray.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 1836
+    },
+    {
+        "caretX": 3,
+        "caretY": 77,
+        "filename": "E:/hwp学编程/大作业--数组运算器/主函数、菜单函数.c",
+        "focused": false,
+        "isOpen": false,
+        "left": 0,
+        "top": 5168
+    }
+]
